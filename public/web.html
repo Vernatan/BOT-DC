@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./web.css">
+  <title>Dashboard - Credits: jawabone</title>
+</head>
+<body>
+  <audio src="https://od.lk/d/NTRfMjQ1ODgzMTZf/spiral.mp3" autoplay loop controls style="display:none;"></audio>
+  
+  <div class="web-container">
+    <div class="web-card">
+      <img src="https://i.pinimg.com/originals/cd/e0/42/cde04286962d2a8d3d2347b71c28d2c2.gif" alt="image" class="web-banner">
+      <img src="${botAvatarUrl}" alt="image" class="web-avatar">
+      <span class="web-bot-tag">${loading ? 'Loading...' : botName}</span>
+      <span class="web-quotes">
+        <span>Seorang pria sejati tidak akan pernah</span>
+        <br>
+        <span>melukai seorang wanita. -Sanji (One Piece)</span>
+      </span>
+    </div>
+    <div class="web-youtube">
+      <img src="https://yt3.googleusercontent.com/o1RgSHYSRRM9HAitFm-l8p7ra2rPGrmpdrA8ZVm9O08wk8vrFpXuphVMhEdHdStNZgOoZWQ7NzQ=s176-c-k-c0x00ffffff-no-rj" alt="image" class="web-yt-avatar">
+      <a href="https://www.youtube.com/channel/UCt5-EGaiv7QCjSdycUyYUCw?view_as=subscriber?sub_confirmation=1" target="_blank" rel="noreferrer noopener" class="web-subscribe button">
+        SUBSCRIBE
+      </a>
+    </div>
+  </div>
+
+  <script>
+    const botTagElement = document.querySelector('.web-bot-tag');
+    botTagElement.textContent = `${botName}`;
+
+    const avatarElement = document.querySelector('.web-avatar');
+    avatarElement.src = loading ? 'loading-image-url' : 'https://new-image-url';
+  </script>
+</body>
+</html>
