@@ -1,0 +1,135 @@
+/* Reset default margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.web-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url('https://i.kym-cdn.com/photos/images/original/001/439/792/80b.gif');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.web-card {
+  flex: 0 0 auto;
+  width: 294px;
+  height: 242px;
+  display: flex;
+  opacity: 0.9;
+  position: relative;
+  box-shadow: 0px 0px 10px 0px #040404;
+  transition: 0.3s;
+  align-items: flex-start;
+  border-color: #000000;
+  border-radius: 10px;
+  flex-direction: column;
+  padding-bottom: 2px;
+  background-color: #040404;
+}
+
+.web-card:hover {
+  transform: scale(1.02);
+}
+
+.web-banner {
+  width: 294px;
+  height: 50%;
+  align-self: center;
+  object-fit: cover;
+  border-color: #6429ff;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.web-avatar {
+  top: 80px;
+  left: 110px;
+  width: 75px;
+  bottom: 44px;
+  height: 78px;
+  position: absolute;
+  align-self: center;
+  object-fit: cover;
+  border-color: #6429ff;
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 50%;
+}
+
+.web-bot-tag {
+  left: 0;
+  color: rgb(100, 41, 255);
+  right: 0;
+  bottom: 60px;
+  margin: auto;
+  position: absolute;
+  align-self: center;
+  text-align: center;
+  font-family: Arial;
+}
+
+.web-quotes {
+  left: 0;
+  color: #fff;
+  right: 0;
+  bottom: 25px;
+  margin: auto;
+  position: absolute;
+  font-size: 10px;
+  align-self: center;
+  text-align: center;
+  font-family: Arial;
+}
+
+.web-youtube {
+  width: 152px;
+  bottom: 0;
+  height: 31px;
+  margin: 5px;
+  display: flex;
+  position: fixed;
+  align-items: flex-start;
+}
+
+.web-yt-avatar {
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 31px;
+  position: absolute;
+  box-shadow: 0px 0px 5px 0px #000000;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.web-subscribe {
+  color: #fff;
+  width: 116px;
+  cursor: pointer;
+  height: 30px;
+  align-self: center;
+  box-shadow: -2px 0px 7px 0px #000000;
+  text-align: center;
+  transition: 0.3s;
+  font-family: "Arial Black", sans-serif;
+  margin-left: 35px;
+  border-width: 0px;
+  border-radius: 3px;
+  text-decoration: none;
+  background-color: rgb(255, 0, 0);
+}
+
+.web-subscribe:hover {
+  background-color: #fd5b5b;
+  }
+  
